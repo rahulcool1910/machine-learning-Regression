@@ -17,7 +17,7 @@ from sklearn.compose import ColumnTransformer
 
 labelEncoder=LabelEncoder();
 x[:,3]=labelEncoder.fit_transform(x[:,3])
-
+ 
 ct = ColumnTransformer([("State", OneHotEncoder(), [3])], remainder = 'passthrough')
 
 x = ct.fit_transform(x)
