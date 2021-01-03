@@ -32,14 +32,12 @@ Regressor.fit(X_train,Y_train)
 Y_pred=Regressor.predict(X_train)
 
 
-'''
 plt.scatter(X_train,Y_train,color="red")
 plt.plot(X_train,Y_pred,color='blue')
 plt.title("Salary Vs Experiance")
 plt.xlabel("Salary")
 plt.ylabel("Experiace")
 plt.show()
-'''
 
 
  

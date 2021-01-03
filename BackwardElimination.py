@@ -30,10 +30,10 @@ import statsmodels.api as sm
 X_train=np.append(arr=np.ones((40,1)).astype(int), values=X_train, axis=1)
 X_test=np.append(arr=np.ones((10,1)).astype(int), values=X_test, axis=1)
 
-X_opt = np.array(X_train[:, [0,  3, 5]], dtype=float)
-X_opt_1 = np.array(X_test[:, [0,  3, 5]], dtype=float)
+X_opt = np.array(X_train[:, [0,3,5]], dtype=float)
+X_opt_1 = np.array(X_test[:, [0,1,2,  3,4, 5]], dtype=float)
 regressor_OLS = sm.OLS(endog = Y_train, exog = X_opt).fit()
-dataX=regressor_OLS.predict(X_opt_1)
+#dataX=regressor_OLS.predict(X_opt_1)
 print(regressor_OLS.summary())
 
 
