@@ -45,4 +45,3 @@ plt.contourf(X1,X2,classifier.predict(X_pre).reshape(X1.shape),alpha=0.75,cmap=L
 
 for i,j in enumerate(np.unique(Y_set)):
     plt.scatter(X_set[Y_set==i,0],X_set[Y_set==i,1],color=ListedColormap(('red','green'))(i))
-    
